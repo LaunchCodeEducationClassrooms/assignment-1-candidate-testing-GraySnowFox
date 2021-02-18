@@ -6,7 +6,7 @@ const input = require('readline-sync');
 let candidateName;
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
-let correctAnswer;
+let correctAnswer = "";
 let candidateAnswer;
 let questions = [
   "Who was the first American woman in space? ",
@@ -35,7 +35,7 @@ function askQuestion() {
   for(let i = 0; i < questions.length; i++){
     question = questions[i];
     candidateAnswer = input.question(question);
-    candidateAnswer = candidateAnswer.toLowerCase();
+    candidateAnswer = candidateAnswer;
     candidateAnswers.push(candidateAnswer);
   }
 
@@ -58,7 +58,7 @@ function gradeQuiz(candidateAnswers) {
     console.log("Correct Answer: " + correctAnswers[i] + "\n");
 
 
-    if(candidateAnswers[i] === correctAnswers[i].toLowerCase()){
+    if(candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
      
       rightAnswers++;
     }

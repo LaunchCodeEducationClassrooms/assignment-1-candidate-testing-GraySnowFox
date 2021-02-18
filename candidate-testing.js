@@ -2,7 +2,8 @@ const input = require('readline-sync');
 
 // TODO 2: modify your quiz app to ask 5 questions //
 
-// TODO 1.1a: Define candidateName // 
+// TODO 1.1a: Define candidateName //
+//This comment is just so I can commit and try to figure out why autograde is so messed up
 let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "Who was the first American woman in space? ";

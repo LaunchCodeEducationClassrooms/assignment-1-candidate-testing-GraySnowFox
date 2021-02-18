@@ -9,17 +9,17 @@ let question;
 let correctAnswer;
 let candidateAnswer;
 let questions = [
-  "Who was the first American woman in space? \n",
-  "True or false: 5000 meters = 5 kilometers \n",
-  "(5 + 3)/2 * 10 = ? \n",
-  "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? \n",
-  "What is the minimum crew size for the ISS? \n"
+  "Who was the first American woman in space? ",
+  "True or false: 5000 meters = 5 kilometers ",
+  "(5 + 3)/2 * 10 = ? ",
+  "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ",
+  "What is the minimum crew size for the ISS? "
 ]
 let correctAnswers = [
-  "sally ride",
-  "true",
+  "Sally Ride",
+  "True",
   "40",
-  "trajectory",
+  "Trajectory",
   "3"
 ];
 let candidateAnswers= [];
@@ -27,7 +27,7 @@ let candidateAnswers= [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  candidateName = input.question("What is your name?\n ");
+  candidateName = input.question("What is your name? ");
 
 }
 
@@ -58,7 +58,7 @@ function gradeQuiz(candidateAnswers) {
     console.log("Correct Answer: " + correctAnswers[i] + "\n");
 
 
-    if(candidateAnswers[i] === correctAnswers[i]){
+    if(candidateAnswers[i] === correctAnswers[i].toLowerCase()){
      
       rightAnswers++;
     }

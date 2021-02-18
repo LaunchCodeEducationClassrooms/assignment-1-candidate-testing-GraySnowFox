@@ -46,7 +46,7 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  console.clear();
+
   console.log("Candidate Name: " + candidateName + "\n");
 
   let grade=0;
